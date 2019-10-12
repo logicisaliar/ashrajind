@@ -1,0 +1,5 @@
+<% @products.each do |p| %>
+<%= p.name %>
+<%= link_to "Edit Product", edit_product_path(p) %>
+<% end %>
+<%= link_to "New Product", new_product_path %>
