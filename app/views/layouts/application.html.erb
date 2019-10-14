@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ashraj Industries</title>
-    <%= favicon_link_tag 'logo.png' , type: "image/png" %>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
-  <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ashraj Industries</title>
+  <%= favicon_link_tag 'logo.png' , type: "image/png" %>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+</head>
+<body>
+  <div class="top-margin">
+    <%= render 'shared/navbar' %>
+  </div>
+  <%= yield %>
+  <div class="bottom-margin">
+    <%= render 'shared/footer' %>
+  </div>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_pack_tag 'application' %>
+</body>
 </html>

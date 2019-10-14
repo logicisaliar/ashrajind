@@ -1,6 +1,79 @@
-<%#= link_to "New Product", new_product_path %>
-<div class="container top-padding">
-<h1>
-Site under construction. Please call <a href="tel:+918691016684">Call +91 869 101 6684</a> or mail at <a href="mailto:info@ashraj.in?Subject=Hello" target="_top">info@ashraj.in</a>.
-</h1>
+
+
+<% l = 300 %>
+<% activities = "We manufacture Nature Identical Flavours and Essential Oils. The essential oils provided by us find wide scale applications in the cosmetics, flavouring and pharmaceutical industries. This is due to various therapeutic benefits and also the distinct odour and flavour of these oils. The flavours we manufacture are used in all kinds of food and edible products like cakes, ice creams, and sweets, to name a few." %>
+<% profile = "Currently, the company is dealing with over a 100 clients in varying volumes of work across all categories. Be it an order of 1 kg or several tons, the company looks to serve all customers. The vision is to reliably provide consistent and affordable products with complete ease of operations." %>
+<% history = "Ashraj Industries is a young and quickly growing company, established only in 2011. This is a family run business with 4 key members. The proprietor, Mr. Rajesh Shah, established this company after 20 years of experience with Venus Trading Co., (established by his brother, Mr. Ashesh Shah in 1985). Both brothers have worked for Jupiter Trading Co. which was established by their father, Mr. Arvindkumar Shah in 1962. Thus, despite being established in 2011, Ashraj Industries is backed by heritage and experience of three generations over a span of 55 years. The latest entrants to the family business is the third generation, Miti and Jash. Over the years, the family and hence the company, has developed an amazing rapport and goodwill within the industry in India. Currently, the company boasts a strong clientele in the Indian market for both, purchases of raw materials and selling finished products, and is growing steadily as it always has been." %>
+
+
+
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('https://res.cloudinary.com/logicisaliar/image/upload/v1535388183/Ashraj/EO.jpg');">
+  <div class="banner-content">
+    <%#= image_tag "Ashraj - PNG.png", width: 200 %>
+    <h1>Ashraj Industries</h1>
+    <p>
+      <span id="banner-typed-text"></span>
+    </p>
+    <div class="vertical">
+      <h2>
+        <%= link_to "View Products", products_path, class: "btn-products" %>
+      </h2>
+    </div>
+    <!-- <a class="btn btn-primary btn-lg">Products</a> -->
+  </div>
 </div>
+<div class="card-product">
+  <div class="card-product-infos">
+    <h2>Activities</h2>
+    <p>
+      <%= activities.truncate(l) %>
+      <%= link_to "(read more)", root_path  %>
+    </p>
+  </div>
+</div>
+<div class="separator">
+  <hr>
+</div>
+<div class="card-product">
+  <div class="card-product-infos">
+    <h2>Profile</h2>
+    <p>
+      <%= profile.truncate(l) %>
+      <%= link_to "(read more)", root_path  %>
+    </p>
+  </div>
+</div>
+<div class="separator">
+  <hr>
+</div>
+<div class="card-product">
+  <div class="card-product-infos">
+    <h2>History</h2>
+    <p>
+      <%= history.truncate(l) %>
+      <%= link_to "(read more)", root_path  %>
+    </p>
+  </div>
+</div>
+<div class="separator">
+  <hr>
+</div>
+<div class="card-product">
+  <div class="card-product-infos">
+    <h2>
+      Get in touch!
+    </h2>
+    <p>
+      <strong>Address:</strong> <a href="https://www.google.com/maps/place/Ashraj+Industries/@19.1148212,72.850154,15z/data=!4m5!3m4!1s0x0:0xae6a5b64bff107e9!8m2!3d19.1148212!4d72.850154">1035, Hubtown Solaris, N. S. Phadke Marg, Andheri (East), Mumbai - 400 069</a>
+      <br>
+      <strong>Phone:</strong> <a href="tel:+918691016684">+91-869-101-6684</a>
+      <br>
+      <strong>Landline:</strong> <a href="tel:+912226821340">+91-22-26821340</a>
+      <br>
+      <strong>E-mail:</strong> <a href="mailto:info@ashraj.in?Subject=Hello" target="_top">info@ashraj.in</a>
+    </p>
+  </div>
+</div>
+
+<!-- <div class="bottom-margin-inverse"></div> -->
