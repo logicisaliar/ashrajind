@@ -1,0 +1,22 @@
+<div class="top-selling container">
+  <h1>Top Selling</h1>
+  <div class="cards">
+    <% pro.each do |p| %>
+    <% url = "https://res.cloudinary.com/logicisaliar/image/upload/a_0/v1571159339/Ashraj/Flavours/#{p.id}.jpg" %>
+    <div class="card-trip">
+      <!-- <img src="https://source.unsplash.com/random" /> -->
+      <%= image_tag "#{p.id}.jpg", alt: p.name %>
+      <div class="card-trip-infos">
+
+
+        <div>
+          <h2><%= p.name %></h2>
+        <div class="code">Code - <%= p.code %> </div>
+          <h2 class="card-trip-pricing"><%= p.mrp %> per Ltr/Kg</h2>
+          <p><%= p.description %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

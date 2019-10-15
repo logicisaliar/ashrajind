@@ -18,7 +18,8 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.all
+    @prods = Product.all.where(disp: true)
+    @products = @prods.sort_by{ |m| m.name }
   end
 
   def edit

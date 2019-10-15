@@ -20,14 +20,44 @@
   padding: 20px;
   border-radius: 3px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.btn-backhome:hover {
+  color: $gray-s;
+  background-color: $gray;
+}
+
+#flavour {
+  background: $red-b;
+}
 .btn-mains {
-  background: $blue-k;
-  color: white;
-  width: 300px;
+  background: $blue-b;
+  color: black;
+  font-style: bold;
+  width: 80%;
+  height: 150px;
+  font-size: 30px;
   text-align: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#flavour:hover {
+  // transition: font-size 0.5s ease;
+  color: $red-b;
+  background: $red-t;
+}
+
+.btn-mains:hover {
+  background-color: $blue-t;
+  color: $blue-b;
+  width: 100%;
+  transition: 0.5s ease;
+  // transition: font-size 0.5s ease;
+  font-size: 70px;
 }

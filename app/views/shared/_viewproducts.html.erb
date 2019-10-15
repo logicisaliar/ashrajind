@@ -1,5 +1,8 @@
-<div class="view-product">
-  <%= link_to "Flavours", products_path(:par => 1), class: "btn-mains" %>
-asdasd
-  <%= link_to "Essential Oils", products_path(:par => 2), class: "btn-mains" %>
+<div class="view-products">
+  <p>
+    <%= link_to "Flavours", products_path(:par => 1), class: "btn-mains", id: "flavour" %>
+  </p>
+  <p>
+    <%= link_to "Essential Oils", products_path(:par => 2), class: "btn-mains" %>
+  </p>
 </div>

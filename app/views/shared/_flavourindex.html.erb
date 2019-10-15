@@ -1,6 +1,9 @@
-<% @products.each do |p| %>
-<%= p.code %>
-<%= p.name %>
-<%= p.mrp %>
-<br>
+<%= render 'shared/topselling', :pro => @products.select{ |a| a.top_selling == true } %>
+
+  <% @products.each do |p| %>
+  <div class="row">
+    <%= p.code %>
+    <%= p.name %>
+    <%= p.mrp %>
+  </div>
 <% end %>
