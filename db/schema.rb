@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2019_10_12_113632) do
     t.boolean "soft_drink"
     t.boolean "other"
     t.text "description"
-    t.boolean "print"
+    t.boolean "disp"
     t.boolean "top_selling"
     t.boolean "powder"
     t.boolean "sdc"
