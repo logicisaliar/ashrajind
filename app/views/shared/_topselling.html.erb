@@ -1,17 +1,37 @@
 <div class="top-selling">
-  <h1>Top Selling</h1>
+  <h1>TOP SELLING</h1>
   <div class="cards">
     <% pro.each do |p| %>
-    <% url = "https://res.cloudinary.com/logicisaliar/image/upload/a_0/v1571159339/Ashraj/Flavours/#{p.id}.jpg" %>
     <div class="card-trip">
-      <!-- <img src="https://source.unsplash.com/random" /> -->
+      <% begin %>
       <%= image_tag "#{p.id}.jpg", alt: p.name %>
+      <% rescue %>
+      <%= image_tag "Ashraj - JPG.jpg", alt: "Ashraj" %>
+      <% end %>
       <div class="card-trip-infos">
-
-
         <div>
-          <h2><%= p.name %></h2>
-        <div class="code">Code - <%= p.code %> </div>
+          <h2>
+            <div class="name-row">
+              <div class="">
+                <%= p.name %>
+              </div>
+              <div class="uses">
+                <% if p.bakery == true %>
+                <%= image_tag "Green.png" %>
+                <% end %>
+                <% if p.soft_drink == true %>
+                <%= image_tag "Red.png" %>
+                <% end %>
+                <% if p.icecream == true %>
+                <%= image_tag "Blue.png" %>
+                <% end %>
+                <% if p.other == true %>
+                <%= image_tag "Black.png" %>
+                <% end %>
+              </div>
+            </div>
+          </h2>
+          <div class="code">Code - <%= p.code %> </div>
           <h2 class="card-trip-pricing"><%= p.mrp %> per Ltr/Kg</h2>
           <p><%= p.description %></p>
         </div>

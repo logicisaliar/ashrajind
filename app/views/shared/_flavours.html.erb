@@ -1,0 +1,64 @@
+<div class="flavours">
+  <h1>FLAVOURS</h1>
+  <% p=Product.find(9) %>
+  <table style="width:100%">
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>MRP (Per Ltr)</th>
+    <th>Uses</th>
+  </tr>
+  <% pro.each do |p| %>
+  <tr>
+    <td><%= p.code %></td>
+    <td><%= p.name %></td>
+    <td><%= p.mrp %></td>
+    <td><div class="uses">
+        <% if p.bakery == true %>
+        <%= image_tag "Green.png", class: "uses-image" %>
+        <% end %>
+        <% if p.soft_drink == true %>
+        <%= image_tag "Red.png", class: "uses-image" %>
+        <% end %>
+        <% if p.icecream == true %>
+        <%= image_tag "Blue.png", class: "uses-image" %>
+        <% end %>
+        <% if p.other == true %>
+        <%= image_tag "Black.png", class: "uses-image" %>
+        <% end %>
+      </div></td>
+  </tr>
+  <% end %>
+  </table>
+</div>
+  <% pro.each do |p| %>
+  <div class="notification">
+    <p><%= p.code %></p>
+    <div class="notification-content">
+      <div class="name-mrp">
+      <p><%= p.name %></p>
+      <p><%= p.mrp %></p>
+      </div>
+    </div>
+      <div class="uses">
+        <% if p.bakery == true %>
+        <%= image_tag "Green.png", class: "uses-image" %>
+        <% end %>
+        <% if p.soft_drink == true %>
+        <%= image_tag "Red.png", class: "uses-image" %>
+        <% end %>
+        <% if p.icecream == true %>
+        <%= image_tag "Blue.png", class: "uses-image" %>
+        <% end %>
+        <% if p.other == true %>
+        <%= image_tag "Black.png", class: "uses-image" %>
+        <% end %>
+      </div>
+    <div class="notification-actions">
+      <a href="#">See more?</a>
+    </div>
+  </div>
+  <div class="", id="one-line">
+
+  </div>
+  <% end %>

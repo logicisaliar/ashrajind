@@ -2,6 +2,7 @@
   background-color: $blue-b;
   // margin-top: 100px;
   // padding-left: 10px;
+  padding-bottom: 50px;
   // padding-right: 10px;
 }
 
@@ -11,4 +12,20 @@
   text-align: center;
   margin-bottom: 50px;
   padding: 20px;
+}
+
+.name-row img {
+  height: 10px;
+  margin-left: 2px;
+}
+
+.name-row {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  align-items: baseline;
+}
+
+.uses {
+  display: flex;
 }

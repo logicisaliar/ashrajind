@@ -1,8 +1,7 @@
 
 
-<% l = 300 %>
 <% activities = "We manufacture Nature Identical Flavours and Essential Oils. The essential oils provided by us find wide scale applications in the cosmetics, flavouring and pharmaceutical industries. This is due to various therapeutic benefits and also the distinct odour and flavour of these oils. The flavours we manufacture are used in all kinds of food and edible products like cakes, ice creams, and sweets, to name a few." %>
-<% profile = "Currently, the company is dealing with over a 100 clients in varying volumes of work across all categories. Be it an order of 1 kg or several tons, the company looks to serve all customers. The vision is to reliably provide consistent and affordable products with complete ease of operations." %>
+<% profile = "The company is currently dealing with over a 100 clients in varying volumes of work across all categories. Be it an order of 1 kg or several tons, the company looks to serve all customers. The vision is to reliably provide consistent and affordable products with complete ease of operations." %>
 <% history = "Ashraj Industries is a young and quickly growing company, established only in 2011. This is a family run business with 4 key members. The proprietor, Mr. Rajesh Shah, established this company after 20 years of experience with Venus Trading Co., (established by his brother, Mr. Ashesh Shah in 1985). Both brothers have worked for Jupiter Trading Co. which was established by their father, Mr. Arvindkumar Shah in 1962. Thus, despite being established in 2011, Ashraj Industries is backed by heritage and experience of three generations over a span of 55 years. The latest entrants to the family business is the third generation, Miti and Jash. Over the years, the family and hence the company, has developed an amazing rapport and goodwill within the industry in India. Currently, the company boasts a strong clientele in the Indian market for both, purchases of raw materials and selling finished products, and is growing steadily as it always has been." %>
 
 
@@ -21,43 +20,13 @@
     <!-- <a class="btn btn-primary btn-lg">Products</a> -->
   </div>
 </div>
-<div class="card-product">
-  <div class="card-product-infos">
-    <h2>Activities</h2>
-    <p>
-      <%= activities.truncate(l) %>
-      <%= link_to "(read more)", root_path  %>
-    </p>
-  </div>
-</div>
-<div class="separator">
-  <hr>
-</div>
-<div class="card-product">
-  <div class="card-product-infos">
-    <h2>Profile</h2>
-    <p>
-      <%= profile.truncate(l) %>
-      <%= link_to "(read more)", root_path  %>
-    </p>
-  </div>
-</div>
-<div class="separator">
-  <hr>
-</div>
-<div class="card-product">
-  <div class="card-product-infos">
-    <h2>History</h2>
-    <p>
-      <%= history.truncate(l) %>
-      <%= link_to "(read more)", root_path  %>
-    </p>
-  </div>
-</div>
-<div class="separator">
-  <hr>
-</div>
-<div class="card-product">
+
+<%= render 'shared/home_briefs', :heading => "Profile", :text => profile%>
+<%= render 'shared/home_briefs', :heading => "Activities", :text => activities%>
+<%= render 'shared/home_briefs', :heading => "History", :text => history%>
+
+
+<div class="card-product", id="get-in-touch">
   <div class="card-product-infos">
     <h2>
       Get in touch!
