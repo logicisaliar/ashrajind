@@ -8,6 +8,12 @@
   // border-top: 15px solid rgba($red, 0.2);
 }
 
+.card-product:hover {
+  color: $red;
+  background: $gray-s;
+
+}
+
 .card-product img {
   height: 100%;
   width: 120px;

@@ -1,42 +1,39 @@
-<div class="top-selling">
-  <h1>TOP SELLING</h1>
-  <div class="cards">
-    <% pro.each do |p| %>
-    <div class="card-trip">
-      <% begin %>
-      <%= image_tag "#{p.id}.jpg", alt: p.name %>
-      <% rescue %>
-      <%= image_tag "Ashraj - JPG.jpg", alt: "Ashraj" %>
-      <% end %>
-      <div class="card-trip-infos">
-        <div>
-          <h2>
-            <div class="name-row">
-              <div class="">
-                <%= p.name %>
-              </div>
-              <div class="uses">
-                <% if p.bakery == true %>
-                <%= image_tag "Green.png" %>
-                <% end %>
-                <% if p.soft_drink == true %>
-                <%= image_tag "Red.png" %>
-                <% end %>
-                <% if p.icecream == true %>
-                <%= image_tag "Blue.png" %>
-                <% end %>
-                <% if p.other == true %>
-                <%= image_tag "Black.png" %>
-                <% end %>
-              </div>
+<div class="cards">
+  <% pro.each do |p| %>
+  <div class="card-trip">
+    <% begin %>
+    <%= image_tag "#{p.id}.jpg", alt: p.name %>
+    <% rescue %>
+    <%= image_tag "Ashraj - JPG.jpg", alt: "Ashraj" %>
+    <% end %>
+    <div class="card-trip-infos">
+      <div>
+        <h2>
+          <div class="name-row">
+            <div class="">
+              <%= p.name %>
             </div>
-          </h2>
-          <div class="code">Code - <%= p.code %> </div>
-          <h2 class="card-trip-pricing"><%= p.mrp %> per Ltr/Kg</h2>
-          <p><%= p.description %></p>
-        </div>
+            <div class="uses">
+              <% if p.bakery == true %>
+              <%= image_tag "Green.png" %>
+              <% end %>
+              <% if p.soft_drink == true %>
+              <%= image_tag "Red.png" %>
+              <% end %>
+              <% if p.icecream == true %>
+              <%= image_tag "Blue.png" %>
+              <% end %>
+              <% if p.other == true %>
+              <%= image_tag "Black.png" %>
+              <% end %>
+            </div>
+          </div>
+        </h2>
+        <div class="code">Code - <%= p.code %> </div>
+        <h2 class="card-trip-pricing"><%= p.mrp %> per Ltr/Kg</h2>
+        <p><%= p.description %></p>
       </div>
     </div>
-    <% end %>
   </div>
+  <% end %>
 </div>

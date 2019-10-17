@@ -1,33 +1,24 @@
-<div class="flavours">
-  <h1>FLAVOURS</h1>
-  <% p=Product.find(9) %>
-  <table style="width:100%">
-  <tr>
-    <th>Code</th>
-    <th>Name</th>
-    <th>MRP (Per Ltr)</th>
-    <th>Uses</th>
-  </tr>
-  <% pro.each do |p| %>
-  <tr>
-    <td><%= p.code %></td>
-    <td><%= p.name %></td>
-    <td><%= p.mrp %></td>
-    <td><div class="uses">
-        <% if p.bakery == true %>
-        <%= image_tag "Green.png", class: "uses-image" %>
-        <% end %>
-        <% if p.soft_drink == true %>
-        <%= image_tag "Red.png", class: "uses-image" %>
-        <% end %>
-        <% if p.icecream == true %>
-        <%= image_tag "Blue.png", class: "uses-image" %>
-        <% end %>
-        <% if p.other == true %>
-        <%= image_tag "Black.png", class: "uses-image" %>
-        <% end %>
-      </div></td>
-  </tr>
-  <% end %>
-  </table>
+<div class="container">
+  <div class="legend hidden">
+    <div class="close-button">
+
+    </div>
+    <%= render 'shared/legend_line', :img => "Green.png", :text => "Bakery" %>
+    <%= render 'shared/legend_line', :img => "Red.png", :text => "Soft Drink" %>
+    <%= render 'shared/legend_line', :img => "Blue.png", :text => "Ice Cream" %>
+    <%= render 'shared/legend_line', :img => "Black.png", :text => "Other" %>
+
+  </div>
+  <div class="top-selling">
+    <h1>TOP SELLING</h1>
+    <%= render 'shared/topselling', :pro => @products.select{ |a| a.top_selling == true } %>
+  </div>
+  <div class="flavours-section", id="flavours">
+    <h1>FLAVOURS</h1>
+    <%= render 'shared/flavours_section', :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
+  </div>
+  <div class="flavours-section", id="powder">
+    <h1>POWDERS</h1>
+    <%= render 'shared/flavours_section', :pro => @products.select{ |a| (a.powder == true) } %>
+  </div>
 </div>

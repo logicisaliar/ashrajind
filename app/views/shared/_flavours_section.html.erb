@@ -1,0 +1,31 @@
+<div class="">
+  <table style="width:100%">
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>MRP (Per Ltr)</th>
+      <th>Uses</th>
+    </tr>
+    <% pro.each do |p| %>
+    <tr>
+      <td><%= p.code %></td>
+      <td><%= p.name %></td>
+      <td><%= p.mrp %></td>
+      <td><div class="uses">
+        <% if p.bakery == true %>
+        <%= image_tag "Green.png", class: "uses-image" %>
+        <% end %>
+        <% if p.soft_drink == true %>
+        <%= image_tag "Red.png", class: "uses-image" %>
+        <% end %>
+        <% if p.icecream == true %>
+        <%= image_tag "Blue.png", class: "uses-image" %>
+        <% end %>
+        <% if p.other == true %>
+        <%= image_tag "Black.png", class: "uses-image" %>
+        <% end %>
+      </div></td>
+    </tr>
+    <% end %>
+  </table>
+</div>

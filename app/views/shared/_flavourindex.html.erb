@@ -1,2 +1,0 @@
-<%= render 'shared/topselling', :pro => @products.select{ |a| a.top_selling == true } %>
-<%= render 'shared/flavours', :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
