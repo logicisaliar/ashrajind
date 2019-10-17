@@ -31,34 +31,3 @@
   <% end %>
   </table>
 </div>
-  <% pro.each do |p| %>
-  <div class="notification">
-    <p><%= p.code %></p>
-    <div class="notification-content">
-      <div class="name-mrp">
-      <p><%= p.name %></p>
-      <p><%= p.mrp %></p>
-      </div>
-    </div>
-      <div class="uses">
-        <% if p.bakery == true %>
-        <%= image_tag "Green.png", class: "uses-image" %>
-        <% end %>
-        <% if p.soft_drink == true %>
-        <%= image_tag "Red.png", class: "uses-image" %>
-        <% end %>
-        <% if p.icecream == true %>
-        <%= image_tag "Blue.png", class: "uses-image" %>
-        <% end %>
-        <% if p.other == true %>
-        <%= image_tag "Black.png", class: "uses-image" %>
-        <% end %>
-      </div>
-    <div class="notification-actions">
-      <a href="#">See more?</a>
-    </div>
-  </div>
-  <div class="", id="one-line">
-
-  </div>
-  <% end %>

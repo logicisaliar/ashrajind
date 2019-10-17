@@ -13,3 +13,12 @@
 #get-in-touch {
   background-color: $red-b;
 }
+
+.hidden {
+  transition: 1s ease;
+  display: none;
+}
+
+.detail {
+  background-color: white;
+}
