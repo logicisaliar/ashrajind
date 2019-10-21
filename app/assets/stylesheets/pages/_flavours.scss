@@ -8,14 +8,28 @@
 
 .legend {
   position: fixed;
-  top: 10%;
+  top: 30%;
   left: 35%;
   border: 1px solid black;
-  padding: 0 10px;
+  background: white;
+}
+
+.close-button {
+  background: black;
+  color: white;
+  text-align: right;
 }
 
 .legend-line {
   display: flex;
+}
+
+#sdc {
+  background-color: $green-b;
+}
+
+#sdc h1 {
+  background-color: $green-t;
 }
 
 #flavours {
