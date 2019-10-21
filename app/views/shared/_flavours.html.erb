@@ -1,6 +1,7 @@
 <div class="container">
   <div class="legend hidden">
     <div class="close-button">
+      <strong>Common Applications</strong>
       <i class="fas fa-window-close"></i>
     </div>
     <%= render 'shared/legend_line', :img => "Green.png", :text => "Bakery" %>
@@ -11,22 +12,40 @@
   </div>
 
   <div class="top-selling">
-    <h1>TOP SELLING</h1>
-    <%= render 'shared/topselling', :pro => @products.select{ |a| a.top_selling == true } %>
+    <div class="flavour-title">
+      <h1>TOP SELLING</h1>
+    </div>
+    <div class="flavour-hide hidden">
+      <%= render 'shared/topselling', :pro => @products.select{ |a| a.top_selling == true } %>
+    </div>
   </div>
 
   <div class="flavours-section", id="flavours">
-    <h1>FLAVOURS</h1>
-    <%= render 'shared/flavours_section', :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
+    <div class="flavour-title">
+      <h1>FLAVOURS</h1>
+    </div>
+    <div class="flavour-hide hidden">
+      <%= render 'shared/flavours_section', :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
+    </div>
   </div>
 
   <div class="flavours-section", id="sdc">
-    <h1>SOFT DRINK CONC.</h1>
-    <%= render 'shared/flavours_section', :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
+    <div class="flavour-title">
+      <h1>SOFT DRINK CONC.</h1>
+    </div>
+    <div class="flavour-hide hidden">
+      <%= render 'shared/flavours_section', :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
+    </div>
   </div>
 
   <div class="flavours-section", id="powder">
-    <h1>POWDERS</h1>
-    <%= render 'shared/flavours_section', :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
+    <div class="flavour-title">
+      <h1>POWDERS</h1>
+    </div>
+    <div class="flavour-hide hidden">
+      <%= render 'shared/flavours_section', :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
+    </div>
   </div>
 </div>
+<%= link_to "Back to Products", products_path, class: "btn-backhome" %>
+
