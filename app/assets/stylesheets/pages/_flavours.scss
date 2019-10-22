@@ -52,8 +52,22 @@
 .flavours-section h1 {
   color: black;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 20px;
+}
+
+.flavour-title:hover h1 {
+  color: white;
+  font-size: 64px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  }
+
+.flavours-section:hover h1 {
+  color: white;
+  font-size: 64px;
+  transition: 0.2s ease;
+  font-weight: bold;
 }
 
 #one-line {
@@ -69,7 +83,11 @@
 }
 
 th, td {
-  border-bottom: 1px solid #ddd;
+  // border-bottom: 1px solid #ddd;
+}
+
+.flavour-hide em {
+  font-size: 12px;
 }
 
 .top-selling {
@@ -81,7 +99,7 @@ th, td {
   background-color: $blue-t;
   color: black;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -98,7 +116,4 @@ th, td {
   align-items: baseline;
 }
 
-.flavour-title:hover {
-  background-color: $gray;
-  color: white;
-}
+

@@ -21,30 +21,15 @@
   </div>
 
   <div class="flavours-section", id="flavours">
-    <div class="flavour-title">
-      <h1>FLAVOURS</h1>
-    </div>
-    <div class="flavour-hide hidden">
-      <%= render 'shared/flavours_section', :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
-    </div>
+      <%= render 'shared/flavours_section', title: "FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
   </div>
 
   <div class="flavours-section", id="sdc">
-    <div class="flavour-title">
-      <h1>SOFT DRINK CONC.</h1>
-    </div>
-    <div class="flavour-hide hidden">
-      <%= render 'shared/flavours_section', :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
-    </div>
+      <%= render 'shared/flavours_section', title: "SOFT DRINK CONC.", :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
   </div>
 
   <div class="flavours-section", id="powder">
-    <div class="flavour-title">
-      <h1>POWDERS</h1>
-    </div>
-    <div class="flavour-hide hidden">
-      <%= render 'shared/flavours_section', :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
-    </div>
+      <%= render 'shared/flavours_section', title: "POWDERS", :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
   </div>
 </div>
 <%= link_to "Back to Products", products_path, class: "btn-backhome" %>

@@ -1,20 +1,24 @@
-<div class="">
-  <table style="width:100%">
-    <tr>
-      <th>Code</th>
-      <th>Name</th>
-      <th>MRP (per <%= unit %>)</th>
-      <th>Uses</th>
-    </tr>
-    <% pro.each do |p| %>
-    <tr>
-      <td><%= p.code %></td>
-      <td><%= p.name %></td>
-      <td><%= p.mrp %></td>
-      <td>
-        <%= render 'shared/uses', :p => p %>
-      </td>
-    </tr>
-    <% end %>
-  </table>
+<div class="flavour-title">
+  <h1><%= title %></h1>
+</div>
+<div class="flavour-hide hidden">
+  <div class="">
+    <table style="width:100%">
+      <tr>
+        <th>Name</th>
+        <th>MRP (per <%= unit %>)</th>
+        <th>Code</th>
+      </tr>
+      <% pro.each do |p| %>
+        <tr>
+          <td><strong><%= p.name %></strong></td>
+          <td><%= p.mrp %></td>
+          <td><em><%= p.code %></em></td>
+        <td>
+          <%= render 'shared/uses', :p => p %>
+        </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
 </div>
