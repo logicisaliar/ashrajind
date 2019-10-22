@@ -3,8 +3,8 @@
   <%= image_tag "logo.png", height: 50 %>
   <% end %>
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <%= link_to "Flavours", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-    <%= link_to "Essential Oils", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Flavours", products_path(par: 1), class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Essential Oils", products_path(par: 2), class: "navbar-wagon-item navbar-wagon-link" %>
   </div>
 </div>
 
