@@ -28,3 +28,27 @@ csv.each do |row|
 end
 puts "Products created"
 i += 1
+
+puts "Creating Oils - #{i}"
+csv_text = File.read(Rails.root.join('lib', 'seeds', "oil.csv"))
+csv = CSV.parse(csv_text.scrub, :headers => true, :encoding => "ISO-8859-1")
+csv.each do |row|
+  t = Oil.new
+  t.name = row['name']
+  t.code = row['code']
+  t.kind = row['kind']
+  t.inr = row['inr']
+  t.eur = row['eur']
+  t.dol = row['dol']
+  t.genus_name = row['genus_name']
+  t.specific_epithet = row['specific_epithet']
+  t.fine_fragrance = row['fine_fragrance']
+  t.personal_care = row['personal_care']
+  t.home_care = row['home_care']
+  t.food = row['food']
+  t.description = row['description']
+  t.save!
+end
+puts "Oils created"
+i += 1
+

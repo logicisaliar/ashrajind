@@ -1,0 +1,80 @@
+id,code,name,kind,inr,eur,dol,genus_name,specific_epithet,fine_fragrance,personal_care,home_care,food,description
+1,EO0001,Ajwain Oil,Essential Oil,1500,21.4,25,Trachyspermum,Ammi,TRUE,TRUE,TRUE,TRUE,Known for its health benefits like anti-inflammatory action and it is also an antioxidant.
+2,EO0002,Aniseed Oil,Essential Oil,1250,17.9,20.8,Pimpinella,Anisum,TRUE,TRUE,TRUE,TRUE,Can be used widely and effectively in flavouring applications for its unique taste.
+3,EO0003,Basil Oil,Essential Oil,1250,17.9,20.8,Ocimum,Basilicum,TRUE,TRUE,FALSE,TRUE,Refreshing smell. Used as a massage oil and also in various cosmetic applications.
+4,EO0004,Bergamot Oil,Essential Oil,950,13.6,15.8,Citrus,Bergamia,TRUE,TRUE,TRUE,FALSE,Tangy and citrusy. A must use in any Eau de Cologne formulation.
+5,EO0005,Cajeput Oil,Essential Oil,1350,19.3,22.5,Melaleuca,Leucadendra,TRUE,FALSE,FALSE,TRUE,"Effective in treating colds, headaches, toothaches and even tumors."
+6,EO0006,Camphor Oil,Essential Oil,450,6.4,7.5,Cinnamomum,Camphora,TRUE,FALSE,FALSE,FALSE,Popularly used as a room freshner and in various temples across India.
+7,EO0007,Caraway Oil,Essential Oil,3350,47.9,55.8,Carum,Carvi,TRUE,TRUE,TRUE,TRUE,The main ingredient for gripe water used for healthy upbringing of new born babies.
+8,EO0008,Cardamom Oil,Essential Oil,5200,74.3,86.7,Elettaria,Cardamomum,TRUE,FALSE,FALSE,TRUE,"Tangy and spicy, but cool. It is a popular flavouring agent too. "
+9,EO0009,Cassia Oil,Essential Oil,1250,17.9,20.8,Cinnamomum,Cassia,TRUE,FALSE,TRUE,TRUE,Strong spicy fragrance which can be used to give any perfume a unique signature.
+10,EO0010,Cedarwood Oil (Microscopic),Essential Oil,2400,34.3,40,Cedrus,Atlantica,FALSE,FALSE,FALSE,FALSE,"Used in chemical testing, for laboratory purposes."
+11,EO0011,Cedarwood Oil (Rectified),Essential Oil,800,11.4,13.3,Cedrus,Atlantica,TRUE,TRUE,FALSE,FALSE,"Apart from its fine aromatic character, cedarwood oil can help to increase focus and wisdom."
+12,EO0012,Celery Seed Oil,Essential Oil,6200,88.6,103.3,Apium,Graveolens,TRUE,FALSE,FALSE,TRUE,Popularly used in soaps and as a flavouring agent in several foods.
+13,EO0013,Cinnamon Leaf Oil,Essential Oil,1250,17.9,20.8,Cinnamomum,Verum,TRUE,TRUE,TRUE,TRUE,"Spicy, yet rounded. The oil derived from the leaf is spicier than one from the bark."
+14,EO0014,Cinnamon Oil,Essential Oil,350,5,5.8,Cinnamomum,Verum,TRUE,TRUE,TRUE,TRUE,Cinnamon is one for the perfumers trying to create something special.
+15,EO0015,Citronella Oil,Essential Oil,950,13.6,15.8,Cymbopogon,Nardus,TRUE,TRUE,TRUE,FALSE,"Apart from its strong aromatic character, it is also known as an effective mosquito repellant."
+16,EO0016,Clove Leaf Oil (Crude),Essential Oil,1250,17.9,20.8,Syzygium,Aromaticum,TRUE,FALSE,FALSE,TRUE,A strong and a sharp spicy note. Could do wonders in the right proportions.
+17,EO0017,Clove Oil (Rectified),Essential Oil,1350,19.3,22.5,Syzygium,Aromaticum,TRUE,FALSE,FALSE,TRUE,"Actually derived from clove leaf oil, hence a finer version of the same."
+18,EO0018,Coriander Oil,Essential Oil,4200,60,70,Coriandrum,Sativum,TRUE,TRUE,FALSE,TRUE,Green tingling smell to arouse the mind with freshness.
+19,EO0019,Cumin Seed Oil,Essential Oil,3100,44.3,51.7,Cuminum,Cyminum,TRUE,FALSE,FALSE,TRUE,Distinct spicy note and strongly flavoured. Popularly used in Kingdom by Alexander McQueen.
+20,EO0020,Dill Oil (Anethi),Essential Oil,1350,19.3,22.5,Anethum,Graveolens,TRUE,TRUE,TRUE,TRUE,Protects skin and wounds from infection and used as a digestive aid. Also used in Gripe water.
+21,EO0021,Eucalyptus Citriodora Oil,Essential Oil,0,0,0,Eucalyptus,Citriodora,TRUE,TRUE,TRUE,FALSE,Lemon scented oil with powerful antiseptic and insect repelling properties.
+22,EO0022,Eucalyptus Oil,Essential Oil,1250,17.9,20.8,Eucalyptus,Globulus,TRUE,TRUE,TRUE,FALSE,"Due to its antiviral and anti-inflammatory properties, it is of great help in the treatment of shingles."
+23,EO0023,Eucalyptus Oil (80%),Essential Oil,1650,23.6,27.5,Eucalyptus,Globulus,TRUE,TRUE,TRUE,FALSE,Widely known with this name due to the higher content of cineol in this fraction of the oil.
+24,EO0024,Fennel Oil (Sweet),Essential Oil,4500,64.3,75,Foeniculum,Vulgare,TRUE,FALSE,FALSE,TRUE,"Refreshing, earthy and a slightly peppery note which can be used as an effective middle note."
+25,EO0025,Frankincense Oil,Essential Oil,1250,17.9,20.8,Boswellia,Carterii,TRUE,FALSE,TRUE,FALSE,A very good option to help you overcome strong odours of various bases.
+26,EO0026,Garlic Oil,Essential Oil,6500,92.9,108.3,Allium,Sativum,FALSE,FALSE,FALSE,TRUE,Most use is evident in the flavouring industry than the perfume industry.
+27,EO0027,Geranium Oil,Essential Oil,3000,42.9,50,Pelargonium,Graveolens,TRUE,TRUE,FALSE,TRUE,"Light and mellow, typical red flower note used in the heart of a fragrance."
+28,EO0028,Jamrosa Oil,Essential Oil,0,0,0,Cymbopogon,Khasians,TRUE,FALSE,TRUE,FALSE,"An inspirational mix of 4 exotic fragrances: Rose, Citrus, Grass and Spice."
+29,EO0029,Jasmine Oil (Rco),Essential Oil,1500,21.4,25,Jasminum,Officinale,TRUE,TRUE,TRUE,FALSE,Typical white flower accord that is widely used in India in several personal care applications.
+30,EO0030,Jatamanshi (Spikenard) Oil,Essential Oil,0,0,0,Nardostachys,Jatamansi,TRUE,FALSE,FALSE,TRUE,Very popular ingredient in the chewing tobacco industry.
+31,EO0031,Juniper Berry Oil,Essential Oil,4500,64.3,75,Juniperus,Communis,TRUE,TRUE,FALSE,TRUE,One of the exclusive but essential flavouring component of many liquors.
+32,EO0032,Lavender Oil,Essential Oil,750,10.7,12.5,Lavandula,Angustifolia,TRUE,TRUE,TRUE,FALSE,"Due to its relaxing property, lavender oil can be used in applications like aromatherapy."
+33,EO0033,Lemon  Oil,Essential Oil,950,13.6,15.8,Citrus,Limon,TRUE,TRUE,TRUE,TRUE,"Extracted from the zest of the fruit, it is a fresh citrusy note used in several applications."
+34,EO0034,Lemon Grass Oil,Essential Oil,1200,17.1,20,Cymbopogon,Flexuosus,TRUE,TRUE,TRUE,TRUE,Excellent strength of the oil can overcome most base odours along with giving a herbal touch.
+35,EO0035,Lemon Oil (Terpeneless),Essential Oil,3500,50,58.3,Citrus,Limon,TRUE,TRUE,TRUE,FALSE,Strong aldehydic note.
+36,EO0036,Lime  Oil,Essential Oil,1800,25.7,30,Citrus,Aurantifolia,TRUE,TRUE,TRUE,TRUE,Tangy and fresh citrusy. A brilliant fragrance for the top of a perfume.
+37,EO0037,Lime Oil (Terpeneless),Essential Oil,4500,64.3,75,Citrus,Aurantifolia,TRUE,TRUE,TRUE,FALSE,Strong aldehydic note.
+38,EO0038,Mace Oil,Essential Oil,3500,50,58.3,Myristica,Fragrans,TRUE,FALSE,FALSE,TRUE,"Prescribed for healing various health conditions like halitosis, insomnia, congestion and rheumatism."
+39,EO0039,Nagarmotha (Cypriol) Oil,Essential Oil,0,0,0,Cyperus,Scariosus,TRUE,FALSE,FALSE,TRUE,Trusted to penetrate the blood stream and treat irregular menstruation.
+40,EO0040,Nutmeg Oil,Essential Oil,950,13.6,15.8,Myristica,Fragrans,TRUE,FALSE,FALSE,TRUE,Finds interesting application in the chewing tobacco industry.
+41,EO0041,Orange Oil,Essential Oil,0,0,0,Citrus,Sinensis,TRUE,TRUE,TRUE,TRUE,Lesser known facts - it is an antidepressant and an aphrodisiac.
+42,EO0042,Orange Oil (Terpeneless),Essential Oil,950,13.6,15.8,Citrus,Reticulata,TRUE,TRUE,TRUE,FALSE,Strong fruity note.
+43,EO0043,Palma Rosa Oil,Essential Oil,2100,30,35,Cymbopogon,Martinii,TRUE,TRUE,TRUE,FALSE,"Exceptionally powerful and a typical rose note. In the right dosages, it can do wonders."
+44,EO0044,Patchouli Oil,Essential Oil,0,0,0,Pogostemon,Cablin,TRUE,TRUE,TRUE,TRUE,Floral note with an animalic tonality which is widely used in the tobacco industry.
+45,EO0045,Peppermint Oil,Essential Oil,1250,17.9,20.8,Mentha,Piperita,TRUE,TRUE,FALSE,TRUE,Cool and refreshing. Finds multiple applications in the oral care industry.
+46,EO0046,Peppermint Oil (Terpeneless),Essential Oil,1500,21.4,25,Mentha,Piperita,TRUE,TRUE,FALSE,FALSE,Strong minty note.
+47,EO0047,Petitgrain Oil,Essential Oil,0,0,0,Citrus,Aurantium,TRUE,TRUE,FALSE,FALSE,"Sharp citrusy, floral and a slightly woody note which can do wonders in skin care applications."
+48,EO0048,Pine Oil,Essential Oil,190,2.7,3.2,Pinus,Sylvestris,TRUE,TRUE,TRUE,FALSE,"Woody and slightly dry, known for being refreshing and invigorating."
+49,EO0049,Rose Oil (Rco),Essential Oil,1500,21.4,25,Rosa,Damascena,TRUE,TRUE,TRUE,TRUE,Classy floral note. One of the most popular smells dear to nearly every nose on this planet.
+50,EO0050,Rosemary Oil,Essential Oil,1350,19.3,22.5,Rosmarinus,Officinalis,TRUE,TRUE,TRUE,FALSE,Camphorous note used extensively in the air care industry.
+51,EO0051,Sandalwood Oil,Essential Oil,0,0,0,Santalum,Album,TRUE,TRUE,FALSE,TRUE,Rare and expensive. Gives great stability and character to the base of any perfume.
+52,EO0052,Spearmint Oil,Essential Oil,1500,21.4,25,Mentha,Spicata,TRUE,TRUE,FALSE,TRUE,"Refreshing mint note, used widely for oral care and as a flavouring agent."
+53,EO0053,Tagetes Oil,Essential Oil,4300,61.4,71.7,Tagetes,Erecta,TRUE,TRUE,FALSE,FALSE,Very exclusive and a blossoming floral note found in premium fragrances. 
+54,EO0054,Tea Tree  Oil,Essential Oil,4200,60,70,Melaleuca,Alternifolia,TRUE,TRUE,TRUE,FALSE,Used to treat skin affected by acne to psoriasis. Thus making it a great ingredient for skin care.
+55,EO0055,Thyme Oil,Essential Oil,1500,21.4,25,Thymus,Vulgaris,TRUE,FALSE,FALSE,TRUE,A fresh and herbaceous aroma presenting a gourmand top-middle note.
+56,EO0056,Turpentine Oil,Essential Oil,190,2.7,3.2,Syncarpia,Glomulifera,TRUE,TRUE,TRUE,FALSE,"Applied to the�skin�for�joint pain,�muscle pain,�nerve pain and�toothaches."
+57,EO0057,Valerian Oil,Essential Oil,0,0,0,Valeriana,Officinalis,TRUE,TRUE,TRUE,FALSE,One of the oldest and the best remedies for curing insomnia.
+58,EO0058,Water Mint Oil,Essential Oil,0,0,0,Mentha,Citrata,TRUE,TRUE,TRUE,FALSE,Dubbed as the Indian bergamot and can also rightly be used in Eau de Cologne applications.
+59,EO0059,Ylang Ylang Oil,Essential Oil,1500,21.4,25,Cananga,Odorata,TRUE,TRUE,TRUE,FALSE,Typical floral note which can be used to make any perfume a well rounded one.
+60,CO0001,Apricot Oil,Carrier Oil,650,9.3,10.8,Prunus,Armeniaca,FALSE,TRUE,FALSE,TRUE,"With a deep, nutty flavor apricot oil makes an excellent ingredient for desserts and other recipes."
+61,CO0002,Bitter Almond Oil,Carrier Oil,450,6.4,7.5,Prunus,Dulcis,FALSE,TRUE,FALSE,FALSE,Acute bitterness and the nature of the oil are very effective in killing intestinal worms.
+62,CO0003,Chaulmogra Oil,Carrier Oil,650,9.3,10.8,Hydnocarpus,Wightianus,FALSE,TRUE,FALSE,FALSE,Has been a part of the Traditional Chinese Medicine and Ayurveda.
+63,CO0004,Evening Primrose Oil,Carrier Oil,750,10.7,12.5,Oenothera,Biennis,FALSE,TRUE,FALSE,FALSE,Contains an omega-6 essential fatty acid that is necessary for good health.
+64,CO0005,Jojoba Oil,Carrier Oil,2100,30,35,Simmondsia,Chinensis,FALSE,TRUE,FALSE,TRUE,Structurally so close to the sebaceous gland secretion in the skin that it is almost a natural substitute.
+65,CO0006,Linseed Oil,Carrier Oil,240,3.4,4,Linum,Usitatissimum,FALSE,TRUE,FALSE,FALSE,Boiled linseed oil is used for paints and wood finish as it dries quickly.
+66,CO0007,Neem Seed Oil,Carrier Oil,240,3.4,4,Azadirachta,Indica,FALSE,TRUE,FALSE,FALSE,"In Vedas, referred to �Sarva Roga Nirvarini� � one capable of curing every illness and ailments."
+67,CO0008,Olive Oil,Carrier Oil,330,4.7,5.5,Olea,Europaea,FALSE,TRUE,FALSE,TRUE,A popular addition in Italian cuisine and a very good ingredient for Hair Care.
+68,CO0009,Sweet Almond Oil,Carrier Oil,450,6.4,7.5,Prunus,Dulcis,FALSE,TRUE,FALSE,TRUE,It is a great cure for dark circles and removing unwanted tans.
+69,CO0010,Walnut Oil,Carrier Oil,650,9.3,10.8,Juglans,Regia,FALSE,TRUE,FALSE,TRUE,"A great remedy to counter wrinkles and hence, a great addition to any anti-ageing cream."
+70,CO0011,Wheat Germ Oil,Carrier Oil,750,10.7,12.5,Triticum,Vulgare,FALSE,TRUE,FALSE,FALSE,Rich in Vitamin E which is good for the skin and thus a popular cosmetic ingredient.
+71,EOT001,Ajwain,Essential Oil Terpene,650,9.3,10.8,,,TRUE,FALSE,FALSE,FALSE,
+72,EOT002,Clove,Essential Oil Terpene,350,5,5.8,,,TRUE,FALSE,FALSE,FALSE,
+73,EOT003,Dill (Anethi),Essential Oil Terpene,950,13.6,15.8,,,TRUE,FALSE,FALSE,FALSE,
+74,EOT004,Eucalyptus,Essential Oil Terpene,950,13.6,15.8,,,TRUE,FALSE,FALSE,FALSE,
+75,EOT005,Lemon,Essential Oil Terpene,750,10.7,12.5,,,TRUE,FALSE,FALSE,FALSE,
+76,EOT006,Lemon Grass,Essential Oil Terpene,750,10.7,12.5,,,TRUE,FALSE,FALSE,FALSE,
+77,EOT007,Orange,Essential Oil Terpene,950,13.6,15.8,,,TRUE,FALSE,FALSE,FALSE,
+78,EOT008,Peppermint,Essential Oil Terpene,350,5,5.8,,,TRUE,FALSE,FALSE,FALSE,
+79,EOT009,Spearmint,Essential Oil Terpene,350,5,5.8,,,TRUE,FALSE,FALSE,FALSE,
