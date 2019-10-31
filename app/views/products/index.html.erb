@@ -1,11 +1,38 @@
-<% if params[:par] == nil %>
-<%= render 'shared/viewproducts' %>
-<% elsif params[:par] == "2" %>
-<%= render 'shared/underconstruction' %>
-<% elsif params[:par] == "1" %>
-<%= render 'shared/flavours' %>
-<% else %>
-<% end %>
+<div class="container">
+  <div class="legend hidden">
+    <div class="close-button">
+      <strong>Common Applications</strong>
+      <i class="fas fa-window-close"></i>
+    </div>
+    <%= render 'shared/legend_line', :img => "Green.png", :text => "Bakery" %>
+    <%= render 'shared/legend_line', :img => "Red.png", :text => "Soft Drink" %>
+    <%= render 'shared/legend_line', :img => "Blue.png", :text => "Ice Cream" %>
+    <%= render 'shared/legend_line', :img => "Black.png", :text => "Other" %>
+
+  </div>
+
+  <div class="top-selling">
+    <div class="flavour-title">
+      <h1>TOP SELLING</h1>
+    </div>
+    <div class="flavour-hide hidden">
+      <%= render 'shared/topselling', :pro => @products.select{ |a| a.top_selling == true } %>
+    </div>
+  </div>
+
+  <div class="flavours-section", id="flavours">
+      <%= render 'shared/flavours_section', title: "FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
+  </div>
+
+  <div class="flavours-section", id="sdc">
+      <%= render 'shared/flavours_section', title: "SOFT DRINK CONC.", :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
+  </div>
+
+  <div class="flavours-section", id="powder">
+      <%= render 'shared/flavours_section', title: "POWDERS", :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
+  </div>
+</div>
+<%= link_to "Back to Products", prods_path, class: "btn-backhome" %>
 <br>
 <br>
 <%= link_to "Back to Home", root_path, class: "btn-backhome", id: "products-index" %>

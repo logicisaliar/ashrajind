@@ -10,14 +10,7 @@
         <th>Code</th>
       </tr>
       <% pro.each do |p| %>
-        <tr>
-          <td><strong><%= p.name %></strong></td>
-          <td><%= p.mrp %></td>
-          <td><em><%= p.code %></em></td>
-        <td>
-          <%= render 'shared/uses', :p => p %>
-        </td>
-        </tr>
+        <%= link_to render(:partial => 'shared/flavour_line', locals: {:p => p}), root_path %>
       <% end %>
     </table>
   </div>

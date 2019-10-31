@@ -54,7 +54,7 @@ id,code,name,kind,inr,eur,dol,genus_name,specific_epithet,fine_fragrance,persona
 53,EO0053,Tagetes Oil,Essential Oil,4300,61.4,71.7,Tagetes,Erecta,TRUE,TRUE,FALSE,FALSE,Very exclusive and a blossoming floral note found in premium fragrances. 
 54,EO0054,Tea Tree  Oil,Essential Oil,4200,60,70,Melaleuca,Alternifolia,TRUE,TRUE,TRUE,FALSE,Used to treat skin affected by acne to psoriasis. Thus making it a great ingredient for skin care.
 55,EO0055,Thyme Oil,Essential Oil,1500,21.4,25,Thymus,Vulgaris,TRUE,FALSE,FALSE,TRUE,A fresh and herbaceous aroma presenting a gourmand top-middle note.
-56,EO0056,Turpentine Oil,Essential Oil,190,2.7,3.2,Syncarpia,Glomulifera,TRUE,TRUE,TRUE,FALSE,"Applied to theï¿½skinï¿½forï¿½joint pain,ï¿½muscle pain,ï¿½nerve pain andï¿½toothaches."
+56,EO0056,Turpentine Oil,Essential Oil,190,2.7,3.2,Syncarpia,Glomulifera,TRUE,TRUE,TRUE,FALSE,"Applied to the skin for joint pain, muscle pain, nerve pain and toothaches."
 57,EO0057,Valerian Oil,Essential Oil,0,0,0,Valeriana,Officinalis,TRUE,TRUE,TRUE,FALSE,One of the oldest and the best remedies for curing insomnia.
 58,EO0058,Water Mint Oil,Essential Oil,0,0,0,Mentha,Citrata,TRUE,TRUE,TRUE,FALSE,Dubbed as the Indian bergamot and can also rightly be used in Eau de Cologne applications.
 59,EO0059,Ylang Ylang Oil,Essential Oil,1500,21.4,25,Cananga,Odorata,TRUE,TRUE,TRUE,FALSE,Typical floral note which can be used to make any perfume a well rounded one.
@@ -64,7 +64,7 @@ id,code,name,kind,inr,eur,dol,genus_name,specific_epithet,fine_fragrance,persona
 63,CO0004,Evening Primrose Oil,Carrier Oil,750,10.7,12.5,Oenothera,Biennis,FALSE,TRUE,FALSE,FALSE,Contains an omega-6 essential fatty acid that is necessary for good health.
 64,CO0005,Jojoba Oil,Carrier Oil,2100,30,35,Simmondsia,Chinensis,FALSE,TRUE,FALSE,TRUE,Structurally so close to the sebaceous gland secretion in the skin that it is almost a natural substitute.
 65,CO0006,Linseed Oil,Carrier Oil,240,3.4,4,Linum,Usitatissimum,FALSE,TRUE,FALSE,FALSE,Boiled linseed oil is used for paints and wood finish as it dries quickly.
-66,CO0007,Neem Seed Oil,Carrier Oil,240,3.4,4,Azadirachta,Indica,FALSE,TRUE,FALSE,FALSE,"In Vedas, referred to ï¿½Sarva Roga Nirvariniï¿½ ï¿½ one capable of curing every illness and ailments."
+66,CO0007,Neem Seed Oil,Carrier Oil,240,3.4,4,Azadirachta,Indica,FALSE,TRUE,FALSE,FALSE,"In Vedas, referred to “Sarva Roga Nirvarini” – one capable of curing every illness and ailments."
 67,CO0008,Olive Oil,Carrier Oil,330,4.7,5.5,Olea,Europaea,FALSE,TRUE,FALSE,TRUE,A popular addition in Italian cuisine and a very good ingredient for Hair Care.
 68,CO0009,Sweet Almond Oil,Carrier Oil,450,6.4,7.5,Prunus,Dulcis,FALSE,TRUE,FALSE,TRUE,It is a great cure for dark circles and removing unwanted tans.
 69,CO0010,Walnut Oil,Carrier Oil,650,9.3,10.8,Juglans,Regia,FALSE,TRUE,FALSE,TRUE,"A great remedy to counter wrinkles and hence, a great addition to any anti-ageing cream."

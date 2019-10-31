@@ -1,0 +1,10 @@
+      <div class= "flavour-line">
+        <tr>
+          <td><strong><%= p.name %></strong></td>
+          <td><%= p.mrp %></td>
+          <td><em><%= p.code %></em></td>
+          <td>
+            <%= render 'shared/uses', :p => p %>
+          </td>
+        </tr>
+      </div>
