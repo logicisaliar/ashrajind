@@ -33,6 +33,14 @@
   background-color: $green-t;
 }
 
+#premium {
+  background-color: $purple-b;
+}
+
+#premium h1 {
+  background-color: $purple-t;
+}
+
 #flavours {
   background-color: $yellow-b;
 }
@@ -68,6 +76,11 @@
   // font-size: 64px;
   transition: 0.2s ease;
   font-weight: bold;
+}
+
+.flavours-section {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #one-line {

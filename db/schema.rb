@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_10_25_125800) do
     t.boolean "disp"
     t.boolean "top_selling"
     t.boolean "powder"
+    t.boolean "premium"
     t.boolean "sdc"
     t.boolean "chocolate"
     t.boolean "vanilla"

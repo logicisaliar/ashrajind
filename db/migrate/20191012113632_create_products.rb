@@ -13,6 +13,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.boolean :disp
       t.boolean :top_selling
       t.boolean :powder
+      t.boolean :premium
       t.boolean :sdc
       t.boolean :chocolate
       t.boolean :vanilla

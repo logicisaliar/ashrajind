@@ -24,6 +24,7 @@ csv.each do |row|
   t.fruit = row['fruit']
   t.indian = row['indian']
   t.spice = row['spice']
+  t.premium = row['premium']
   t.save!
 end
 puts "Products created"

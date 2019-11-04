@@ -20,8 +20,12 @@
     </div>
   </div>
 
+  <div class="flavours-section", id="premium">
+      <%= render 'shared/flavours_section', title: "PREMIUM FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.premium == true) } %>
+  </div>
+
   <div class="flavours-section", id="flavours">
-      <%= render 'shared/flavours_section', title: "FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false) } %>
+      <%= render 'shared/flavours_section', title: "FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false && a.premium == false) } %>
   </div>
 
   <div class="flavours-section", id="sdc">
@@ -31,6 +35,8 @@
   <div class="flavours-section", id="powder">
       <%= render 'shared/flavours_section', title: "POWDERS", :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
   </div>
+
+
 </div>
 <%= link_to "Back to Products", prods_path, class: "btn-backhome" %>
 <br>
