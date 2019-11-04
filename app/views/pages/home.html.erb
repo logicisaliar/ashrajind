@@ -7,8 +7,10 @@
 
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.4) 0%, rgba(0,36,61,0.4) 50%), url('https://res.cloudinary.com/logicisaliar/image/upload/v1535388183/Ashraj/EO.jpg');">
   <div class="banner-content">
-    <%#= image_tag "Ashraj - PNG.png", width: 200 %>
-    <h1>Ashraj Industries</h1>
+    <%#= image_tag "Ashraj - JPG.jpg", width: 300 %>
+    <%#= image_tag "Ashraj - PNG.png", width: 300 %>
+    <!-- <h1>Ashraj Industries</h1> -->
+
     <p>
       <span id="banner-typed-text"></span>
     </p>
@@ -20,27 +22,27 @@
     <!-- <a class="btn btn-primary btn-lg">Products</a> -->
   </div>
 </div>
-
+<div class="home-image">
+  <%= image_tag "Ashraj LOGO with TM.png", width: 300 %>
+</div>
 <%= render 'shared/home_briefs', :heading => "Profile", :text => profile %>
 <%= render 'shared/home_briefs', :heading => "Activities", :text => activities %>
 <%= render 'shared/home_briefs', :heading => "History", :text => history %>
 
 
-<div class="card-product detail-text", id="get-in-touch">
+<div class="card-product", id="get-in-touch">
   <div class="card-product-infos">
     <h2>
       Get in touch!
     </h2>
-    <div class="hidden">
-    <p>
-      <strong>Address:</strong> <a href="https://www.google.com/maps/place/Ashraj+Industries/@19.1148212,72.850154,15z/data=!4m5!3m4!1s0x0:0xae6a5b64bff107e9!8m2!3d19.1148212!4d72.850154">1035, Hubtown Solaris, N. S. Phadke Marg, Andheri (East), Mumbai - 400 069</a>
-      <br>
-      <strong>Phone:</strong> <a href="tel:+918691016684">+91-869-101-6684</a>
-      <br>
-      <strong>Landline:</strong> <a href="tel:+912226821340">+91-22-26821340</a>
-      <br>
-      <strong>E-mail:</strong> <a href="mailto:info@ashraj.in?Subject=Hello" target="_top">info@ashraj.in</a>
-    </p>
+    <div class="">
+      <p>
+        <strong>Address:</strong> <a href="https://www.google.com/maps/place/Ashraj+Industries/@19.1148212,72.850154,15z/data=!4m5!3m4!1s0x0:0xae6a5b64bff107e9!8m2!3d19.1148212!4d72.850154">1035, Hubtown Solaris, N. S. Phadke Marg, Andheri (East), Mumbai - 400 069</a>
+        <br>
+        <strong>Phone:</strong> <a href="tel:+918691016684">+91-869-101-6684</a> / <a href="tel:+912226821340">+91-22-26821340</a> / <a href="tel:+912226821341">+91-22-26821341</a> / <a href="tel:+912226821342">+91-22-26821342</a>
+        <br>
+        <strong>E-mail:</strong> <a href="mailto:info@ashraj.in?Subject=Hello" target="_top">info@ashraj.in</a>
+      </p>
     </div>
   </div>
 </div>
