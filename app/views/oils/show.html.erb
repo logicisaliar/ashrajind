@@ -1,0 +1,98 @@
+<% p = Oil.find(params[:id]) %>
+<% id = params[:id].to_i %>
+<% if id == Oil.all.length %>
+<% a = 1 %>
+<% else %>
+<% a = id + 1 %>
+<% end %>
+<% if id == 1 %>
+<% z = Oil.all.length %>
+<% else %>
+<% z = id - 1 %>
+<% end %>
+<% s = Oil.find(a) %>
+<% o = Oil.find(z) %>
+<div class="container">
+  <div class="oil-show col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+  <br>
+  <%= image_tag "Ashraj LOGO with TM.png", width: 300 %>
+  <hr>
+  <div class="oil-image">
+  <% begin %>
+  <%= image_tag "#{p.code}.jpg", alt: p.name %>
+  <% rescue %>
+  <%= image_tag "Logo - JPG.jpg", alt: "Ashraj" %>
+  <% end %>
+</div>
+  <div class="oil-detail">
+    <div class="">
+      <h2>
+        <strong><%= p.name %></strong>
+      </h2>
+      <% unless p.genus_name == nil %>
+      <p>
+        <em>
+          (<%= p.genus_name %> <%= p.specific_epithet.downcase %>)
+        </em>
+      </p>
+      <% else %>
+      <% end %>
+      <%= link_to "Previous", oil_path(o), class: "btn-toggle" %>
+      <%= link_to "Next", oil_path(s), class: "btn-toggle" %>
+      <hr>
+      <div class="oil-description">
+        <p>
+          <%= p.description %>
+        </p>
+      </div>
+      <p>
+        <strong>Applications:</strong>
+      </p>
+      <div class="oil-applications">
+        <% if p.fine_fragrance == true %>
+        <div class="application", id="fine-fragrance">
+         Fine Fragrance
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+       <% if p.personal_care == true %>
+       <div class="application", id="personal-care">
+         Personal Care
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+       <% if p.home_care == true %>
+       <div class="application", id="home-care">
+         Home Care
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+       <% if p.food == true %>
+       <div class="application", id="food">
+         Food
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+     </div>
+     <hr>
+   <div class="oil-back">
+     <p>
+      <%= link_to " All Products", prods_path, class: "fas fa-arrow-left" %>
+    </p>
+    <p>
+      <%= link_to " Essential Oils", oils_path, class: "fas fa-arrow-left" %>
+    </p>
+  </div>
+     <br>
+   </div>
+ </div>
+</div>
+</div>

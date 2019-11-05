@@ -1,34 +1,35 @@
 <div class="container">
-<div class="cards">
-<% @oils.each do |p| %>
-  <div class="card-trip">
-    <% begin %>
-    <%= image_tag "#{p.code}.jpg", alt: p.name %>
-    <% rescue %>
-    <%= image_tag "Logo - JPG.jpg", alt: "Ashraj" %>
-    <% end %>
-    <div class="card-trip-infos">
-      <div>
-        <h2>
-          <div class="name-row">
-            <div class="">
-              <%= p.name %>
+  <div class="cards">
+    <% @oils.each do |p| %>
+    <div class="card-trip">
+      <% begin %>
+      <%= image_tag "#{p.code}.jpg", alt: p.name %>
+      <% rescue %>
+      <%= image_tag "Logo - JPG.jpg", alt: "Ashraj" %>
+      <% end %>
+      <div class="card-trip-infos">
+        <div>
+          <h2>
+            <div class="name-row">
+              <div class="oil-name">
+                <%= link_to "#{p.name}", oil_path(p) %>
+                <%= p.name %>
+              </div>
+              <%#= render 'shared/uses', :p => p %>
             </div>
-            <%#= render 'shared/uses', :p => p %>
-          </div>
-        </h2>
-        <div class="code">Code - <%= p.code %> </div>
-        <h2 class="card-trip-pricing hidden">
-          <% if p.inr == 0 %>
-          On request
-          <% else %>
-          <%= p.inr %> per Kg
-          <% end %>
-        </h2>
-        <p><%= p.description %></p>
+          </h2>
+          <div class="code">Code - <%= p.code %> </div>
+          <h2 class="card-trip-pricing hidden">
+            <% if p.inr == 0 %>
+            On request
+            <% else %>
+            <%= p.inr %> per Kg
+            <% end %>
+          </h2>
+          <p><%= p.description %></p>
+        </div>
       </div>
     </div>
+    <% end %>
   </div>
-  <% end %>
-</div>
 </div>
