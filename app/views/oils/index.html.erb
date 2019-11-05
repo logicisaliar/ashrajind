@@ -1,7 +1,7 @@
 <div class="container">
   <div class="cards">
     <% @oils.each do |p| %>
-    <div class="card-trip">
+    <div class="card-trip card-trip-oil">
       <% begin %>
       <%= image_tag "#{p.code}.jpg", alt: p.name %>
       <% rescue %>
