@@ -1,0 +1,89 @@
+<% p = Product.find(params[:id]) %>
+<% id = params[:id].to_i %>
+<% if id == Product.all.length %>
+<% a = 1 %>
+<% else %>
+<% a = id + 1 %>
+<% end %>
+<% if id == 1 %>
+<% z = Product.all.length %>
+<% else %>
+<% z = id - 1 %>
+<% end %>
+<% s = Product.find(a) %>
+<% o = Product.find(z) %>
+<div class="container">
+  <div class="flavour-show col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+  <br>
+  <%= image_tag "Ashraj LOGO with TM.png", width: 300 %>
+  <hr>
+  <div class="flavour-image">
+  <% begin %>
+  <%= image_tag "#{p.id}.jpg", alt: p.name %>
+  <% rescue %>
+  <%= image_tag "Logo - JPG.jpg", alt: "Ashraj" %>
+  <% end %>
+</div>
+  <div class="flavour-detail">
+    <div class="">
+      <h2>
+        <strong><%= p.name %></strong>
+      </h2>
+      <%= link_to "Back to Flavours", products_path, class: "btn-toggle" %>
+      <hr>
+      <div class="flavour-description">
+        <p>
+          <%= p.description %>
+        </p>
+      </div>
+      <p>
+        <strong>Applications:</strong>
+      </p>
+      <div class="flavour-applications">
+        <% if p.bakery == true %>
+        <div class="application", id="bakery">
+         Bakery
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+       <% if p.soft_drink == true %>
+       <div class="application", id="soft-drink">
+         Soft Drink
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+       <% if p.icecream == true %>
+       <div class="application", id="icecream">
+         Icecream
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+       <% if p.other == true %>
+       <div class="application", id="other">
+         Other
+       </div>
+       <% else %>
+       <div class="application">
+       </div>
+       <% end %>
+     </div>
+     <hr>
+   <div class="flavour-back">
+     <p>
+      <%= link_to " All Products", prods_path, class: "fas fa-arrow-left" %>
+    </p>
+    <p>
+      <%= link_to " Flavours", products_path, class: "fas fa-arrow-left" %>
+    </p>
+  </div>
+     <br>
+   </div>
+ </div>
+</div>
+</div>
