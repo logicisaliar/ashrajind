@@ -12,6 +12,7 @@
           <div class="name-row">
             <div class="">
               <%= p.name %>
+              <%= link_to "", product_path(p), class: "fas fa-info-circle" %>
             </div>
             <%= render 'shared/uses', :p => p %>
           </div>

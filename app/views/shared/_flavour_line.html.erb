@@ -2,9 +2,9 @@
   <tr>
     <td>
     <div class="line-block">
+      <%= link_to "", product_path(p), class: "fas fa-info-circle" %>
       <em><%= p.code %></em>
-      <%= link_to " #{p.name}", product_path(p), class: "fas fa-info-circle" %>
-
+      <strong>&nbsp&nbsp&nbsp<%= p.name %></strong>
     </div>
     </td>
     <td><%= p.mrp %></td>

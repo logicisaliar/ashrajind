@@ -80,24 +80,24 @@
 
 
 
-  .flavours-section {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.flavours-section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-  #one-line {
-    width: 800px;
-    padding-left: 100px;
-    font-size: 18px;
-  }
+#one-line {
+  width: 800px;
+  padding-left: 100px;
+  font-size: 18px;
+}
 
-  .name-mrp {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-  }
+.name-mrp {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
 
-  td {
+td {
   // border-bottom: 1px solid #ddd;
 }
 
@@ -133,4 +133,66 @@
 
 .line-block {
   display: flex;
+  align-items: baseline;
+}
+
+.line-block p {
+  font-size: 10px;
+}
+
+
+// show
+
+.flavour-show {
+ background: white;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ margin-top: 70px;
+ text-align: center;
+}
+
+.flavour-image img {
+  height: 200px;
+  width: 200px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.flavour-detail {
+  text-align: left;
+  position: relative;
+}
+
+.flavour-applications {
+  display: flex;
+  justify-content: space-around;
+  text-algin: center;
+}
+
+.application {
+  border: 1px solid black;
+  width: 30vw;
+  font-size: 12px;
+}
+
+#bakery {
+  background-color: $green-t;
+}
+
+#icecream {
+  background-color: $blue-t;
+}
+
+#soft-drink {
+  background-color: $red-t;
+}
+
+#other {
+  background-color: black;
+}
+
+.flavour-back {
+  position: relative;
+  left: 0px;
+  line-height: 1;
+  text-align: left;
 }
