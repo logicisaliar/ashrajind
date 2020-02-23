@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="legend hidden">
+  <div class="legend">
     <div class="close-button">
       <strong>Common Applications</strong>
       <i class="fas fa-window-close"></i>
@@ -21,19 +21,19 @@
   </div>
 
   <div class="flavours-section", id="premium">
-      <%= render 'shared/flavours_section', title: "PREMIUM FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.premium == true) } %>
+    <%= render 'shared/flavours_section', title: "PREMIUM FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.premium == true) } %>
   </div>
 
   <div class="flavours-section", id="flavours">
-      <%= render 'shared/flavours_section', title: "FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false && a.premium == false) } %>
+    <%= render 'shared/flavours_section', title: "FLAVOURS", :unit => "Ltr", :pro => @products.select{ |a| (a.powder == false && a.sdc == false && a.premium == false) } %>
   </div>
 
   <div class="flavours-section", id="sdc">
-      <%= render 'shared/flavours_section', title: "SOFT DRINK CONC.", :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
+    <%= render 'shared/flavours_section', title: "SOFT DRINK CONC.", :unit => "Ltr", :pro => @products.select{ |a| (a.sdc == true) } %>
   </div>
 
   <div class="flavours-section", id="powder">
-      <%= render 'shared/flavours_section', title: "POWDERS", :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
+    <%= render 'shared/flavours_section', title: "POWDERS", :unit => "Kg", :pro => @products.select{ |a| (a.powder == true) } %>
   </div>
 
 

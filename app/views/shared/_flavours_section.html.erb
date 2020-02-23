@@ -3,16 +3,9 @@
 </div>
 <div class="flavour-hide">
   <div class="">
-    <table style="width:100%">
-      <tr>
-        <th>Name</th>
-        <th>MRP</th>
-         <!-- (per <%= unit %>) -->
-      </tr>
-      <% pro.each do |p| %>
-        <%= link_to render(:partial => 'shared/flavour_line', locals: {:p => p}), root_path %>
-      <% end %>
-    </table>
+    <% pro.each do |p| %>
+    <%= link_to render(:partial => 'shared/flavour_line', locals: {:p => p}), product_path(p) %>
+    <% end %>
     <br>
   </div>
 </div>

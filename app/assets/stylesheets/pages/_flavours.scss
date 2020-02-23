@@ -7,8 +7,8 @@
 
 .legend {
   position: fixed;
-  top: 30%;
-  left: 35%;
+  bottom: 10%;
+  right: 15%;
   border: 1px solid black;
   background: white;
 }
@@ -195,4 +195,40 @@ td {
   left: 0px;
   line-height: 1;
   text-align: left;
+}
+
+.flavour-line {
+  overflow: hidden;
+  background: rgba(white, 0.1);
+  margin-bottom: 1px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.flavour-line h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.flavour-line p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.flavour-line .flavour-infos {
+  // padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+}
+
+.block p {
+  margin-right: 20px;
 }

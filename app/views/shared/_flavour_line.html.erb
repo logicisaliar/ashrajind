@@ -1,15 +1,14 @@
-<div class= "flavour-line">
-  <tr>
-    <td>
-    <div class="line-block">
-      <%= link_to "", product_path(p), class: "fas fa-info-circle" %>
-      <em><%= p.code %></em>
-      <strong>&nbsp&nbsp&nbsp<%= p.name %></strong>
+<div class="flavour-line">
+  <div class="flavour-infos">
+    <div>
+      <h2><%= p.name %></h2>
+      <div class="block">
+        <p><%= p.code %></p>
+        <%= render 'shared/uses', :p => p %>
+      </div>
     </div>
-    </td>
-    <td><%= p.mrp %></td>
-    <td>
-      <%= render 'shared/uses', :p => p %>
-    </td>
-  </tr>
+    <div>
+      <h2><%= p.mrp %></h2>
+    </div>
+  </div>
 </div>
