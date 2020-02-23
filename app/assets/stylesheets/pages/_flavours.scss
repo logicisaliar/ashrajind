@@ -6,9 +6,10 @@
 }
 
 .legend {
-  position: fixed;
-  bottom: 10%;
-  right: 15%;
+  // position: fixed;
+  // bottom: 10%;
+  // right: 15%;
+  margin-top: 60px;
   border: 1px solid black;
   background: white;
 }
@@ -17,6 +18,9 @@
   background: black;
   color: white;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .legend-line {
@@ -107,7 +111,7 @@ td {
 
 .top-selling {
   background-color: $blue-b;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 .top-selling h1 {
@@ -221,7 +225,7 @@ td {
   // padding: 6px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  // align-items: flex-end;
 }
 
 .block {

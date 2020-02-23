@@ -1,7 +1,7 @@
 <div class="flavour-title">
   <h1><%= title %></h1>
 </div>
-<div class="flavour-hide">
+<div class="flavour-hide hidden">
   <div class="">
     <% pro.each do |p| %>
     <%= link_to render(:partial => 'shared/flavour_line', locals: {:p => p}), product_path(p) %>
